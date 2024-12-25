@@ -1,2 +1,2 @@
-# mriduprashanth.github.io
+# Web
 My personal website
