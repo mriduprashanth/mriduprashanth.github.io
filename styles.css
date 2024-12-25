@@ -31,7 +31,7 @@ body {
 .portrait {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 0%;
     margin: 20px 0;
 }
 
