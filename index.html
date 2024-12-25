@@ -4,64 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mridu Prashanth</title>
-    <style>
-        :root {
-            --bg-color: #f8f0e3;
-            --text-color: #4a4a4a;
-            --accent-color: #ffb3c1;
-        }
-
-        [data-theme="dark"] {
-            --bg-color: #1e1e1e;
-            --text-color: #e0e0e0;
-            --accent-color: #76c7c0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .container {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .portrait {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 20px 0;
-        }
-
-        h1 {
-            margin: 10px 0;
-            color: var(--accent-color);
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        .toggle-btn {
-            background-color: var(--accent-color);
-            border: none;
-            padding: 10px 20px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        .toggle-btn:hover {
-            opacity: 0.8;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -70,12 +13,6 @@
         <p>Cooking something. C++ is awesome.</p>
         <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
     </div>
-
-    <script>
-        const toggleTheme = () => {
-            const currentTheme = document.body.getAttribute('data-theme');
-            document.body.setAttribute('data-theme', currentTheme === 'dark' ? '' : 'dark');
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
