@@ -2,12 +2,16 @@
     --bg-color: #f8f0e3;
     --text-color: #4a4a4a;
     --accent-color: #ffb3c1;
+    --icon-color: #ffc107; /* Sun color */
+    --icon-bg: #4a4a4a;
 }
 
 [data-theme="dark"] {
     --bg-color: #1e1e1e;
     --text-color: #e0e0e0;
     --accent-color: #76c7c0;
+    --icon-color: #f9f871; /* Moon color */
+    --icon-bg: #e0e0e0;
 }
 
 body {
@@ -40,17 +44,32 @@ p {
     font-size: 18px;
 }
 
-.toggle-btn {
-    background-color: var(--accent-color);
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
+/* Sun/Moon toggle button */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--icon-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.toggle-btn:hover {
-    opacity: 0.8;
+.theme-toggle::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: var(--icon-color);
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+[data-theme="dark"] .theme-toggle::before {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px var(--icon-color), 0 0 15px var(--icon-color);
 }
