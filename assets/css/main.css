@@ -260,7 +260,7 @@ input, select, textarea {
 .download-btn a {
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #383437;
     color: white;
     border-radius: 5px;
     font-weight: bold;
@@ -268,7 +268,7 @@ input, select, textarea {
 }
 
 .download-btn a:hover {
-    background-color: #0056b3;
+    background-color: #543843;
 }
 
 /* Container */
