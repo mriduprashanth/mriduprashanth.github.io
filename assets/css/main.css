@@ -290,36 +290,6 @@ input, select, textarea {
 
 		}
 
-/* Sun/Moon toggle button */
-.theme-toggle {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    background-color: var(--icon-bg);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.theme-toggle::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-color: var(--icon-color);
-    border-radius: 50%;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-[data-theme="dark"] .theme-toggle::before {
-    transform: scale(0.8);
-    box-shadow: 0 0 5px var(--icon-color), 0 0 15px var(--icon-color);
-}
-
 /* Row */
 
 	.row {
