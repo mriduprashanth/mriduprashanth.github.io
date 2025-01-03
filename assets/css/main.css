@@ -110,14 +110,11 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #49bf9d;
 		text-decoration: none;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
-			color: #49bf9d !important;
 			text-decoration: none;
 		}
 
@@ -277,7 +274,6 @@ input, select, textarea {
 .top-banner {
     background-color: white;
     padding: 10px 20px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -290,7 +286,7 @@ input, select, textarea {
 }
 
 .tab {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: black;
     font-weight: bold;
     padding: 10px 20px;
@@ -300,7 +296,7 @@ input, select, textarea {
 
 .tab:hover {
     background-color: #f0f0f0;
-    color: #007BFF;
+    color: #e3a6c2;
 }
 
 /* Container */
