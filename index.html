@@ -37,7 +37,11 @@
       </div>
 
 				<!-- One -->
-					<section id="about" class="bottom-border">
+
+          <!-- this div exists to make the refs in the top banner jump to the right location -->
+          <div id="about"></div>
+
+					<section class="bottom-border">
 						<header class="major">
 							<h2>Undergraduate Research Assistant.<br />
 							Teaching Assistant.</h2>
@@ -46,7 +50,11 @@
 					</section>
 
 				<!-- Two -->
-					<section id="recentwork" class="bottom-border">
+
+          <!-- this div exists to make the refs in the top banner jump to the right location -->
+          <div id="recentwork"></div>
+
+					<section class="bottom-border">
 						<h2>Recent Work</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
@@ -72,7 +80,11 @@
 					</section>
 
 				<!-- Three -->
-					<section id="resume">
+
+          <!-- this div exists to make the refs in the top banner jump to the right location -->
+          <div id="resume"></div>
+
+					<section>
 						<h2>Resume</h2>
             <div class="pdf-viewer">
               <iframe src="resume.pdf" width="100%" height="500px"></iframe>
@@ -132,9 +144,9 @@
 
       <!-- hardcoding default display at the top -->
       <script>
-        window.onload = function() {
-          window.scrollTo(0, 0); // Ensures the page starts at the top
-        };
+        $("html, body").animate({
+           scrollTop: $("#about").offset().top
+        }, 1000); // 1000 milliseconds for the animation duration
       </script>
 	</body>
 </html>
