@@ -278,8 +278,7 @@ input, select, textarea {
     top: 0;
     z-index: 1000;
 
-		margin-left: 30%;
-		width: calc(100% - 30%);
+    width: 100%;
 }
 
 .tabs {
@@ -290,7 +289,7 @@ input, select, textarea {
 .tab {
     color: black;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 0.6em 0.6em;
 }
 
 .tab:hover {
@@ -299,11 +298,9 @@ input, select, textarea {
 }
 
 #theme-toggle {
-  margin: 15px 0px;
-  padding: 5px;
+  border: None;
   font-size: 20px;
-  color: black;
-  border: 0px;
+  margin: 6px;
 }
 
 /* Container */
@@ -2754,10 +2751,17 @@ input, select, textarea {
 	}
 
 		#main > section {
-			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 3em 0;
+			padding: 3em 0;
 		}
+
+    /* add class to any section in main
+     * you want to give a bottom border
+     * of grey
+     */
+    #main .bottom-border {
+			border-bottom: solid 2px #efefef;
+    }
 
 			#main > section:first-child {
 				border-top: 0;
