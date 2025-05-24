@@ -1,6 +1,6 @@
 # Personal Website
 
-at [https://mriduprashanth.github.io/](https://moliveme.github.io/)
+at [https://mriduprashanth.github.io/](https://mriduprashanth.github.io/)
 
 Strata by HTML5 UP
 html5up.net | @ajlkn
