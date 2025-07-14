@@ -1,7 +1,7 @@
 # Makefile for personal website in html, css, js
 
 # Set the default goal
-.DEFAULT_GOAL := help
+.DEFAULT_GOAL := push
 
 # List of PHONY targets
 .PHONY: push help
@@ -10,7 +10,7 @@
 COMMIT_MSG=
 push:
 	git add .
-	if [ -z "$(COMMIT_MSG)" ]; then git commit -m "Generic update (probably didn't bother supplying a commit message)"; else git commit -m "$(COMMIT_MSG)"; fi
+	if [ -z "$(COMMIT_MSG)" ]; then git commit -m "Ran make"; else git commit -m "$(COMMIT_MSG)"; fi
 	git push
 
 # Default - Help message
@@ -20,5 +20,5 @@ help:
 	@echo "  make [target]"
 	@echo ""
 	@echo "Targets:"
-	@echo "  push [COMMIT_MSG=\"<msg>\"]  Push to remote"
+	@echo "  push [COMMIT_MSG=\"<msg>\"]  Add, commit, push"
 	@echo "  help          Show this help message (default)"
