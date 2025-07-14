@@ -129,7 +129,7 @@ input, select, textarea {
 
 	strong, b {
 		color: var(--gray);
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -138,12 +138,12 @@ input, select, textarea {
 
 	p {
 		font-size: 1.1em;
-		margin: 0 0 2em 0;
+		margin: 0 0 0.4em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: var(--black);
-		font-weight: 400;
+		font-weight: 800;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
