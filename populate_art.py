@@ -40,7 +40,7 @@ def find_year_dirs(base: Path):
         if p.is_dir() and p.name.isdigit():
             years.append(p)
     # sort ascending like the example (2014, 2015, ...). Change to reverse=True for newest first.
-    years.sort(key=lambda d: int(d.name))
+    years.sort(key=lambda d: int(d.name), reverse=True)
     return years
 
 def list_year_files(year_dir: Path):
